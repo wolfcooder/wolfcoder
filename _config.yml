@@ -19,7 +19,7 @@ description: >- # this means to ignore newlines until "baseurl:"
   روزمرگی های یک برنامه نویس
 twitter_username: mhkarami97
 github_username: mhkarami97
-minimal_mistakes_skin: air
+minimal_mistakes_skin: neon
 search: true
 og_image: /assets/images/favicon.png
 # teaser: /assets/images/favicon.png
