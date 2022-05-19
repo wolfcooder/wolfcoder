@@ -55,7 +55,7 @@ baseurl: "/"
 #comments:
 #   provider: "giscus"
    
-repository: "MHKarami97/blog"
+repository: "wolfcooder/wolfcoder"
 
 comments:
   provider: ""
