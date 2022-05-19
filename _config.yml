@@ -1,0 +1,197 @@
+# Welcome to Jekyll!
+#
+# This config file is meant for settings that affect your whole blog, values
+# which you are expected to set up once and rarely edit after that. If you find
+# yourself editing this file very often, consider using Jekyll's data files
+# feature for the data you need to update frequently.
+#
+# For technical reasons, this file is *NOT* reloaded automatically when you use
+# 'bundle exec jekyll serve'. If you change this file, please restart the server process.
+
+# Site settings
+# These are used to personalize your new site. If you look in the HTML files,
+# you will see them accessed via {{ site.title }}, {{ site.email }}, and so on.
+# You can create any custom variable you would like, and they will be accessible
+# in the templates via {{ site.myvariable }}.
+title: روزمرگی های یک برنامه نویس
+email: mhkarami97@gmail.com
+description: >- # this means to ignore newlines until "baseurl:"
+  روزمرگی های یک برنامه نویس
+twitter_username: mhkarami97
+github_username: mhkarami97
+minimal_mistakes_skin: air
+search: true
+og_image: /assets/images/favicon.png
+# teaser: /assets/images/favicon.png
+logo: /assets/images/favicon.png
+
+locale: "fa-IR"
+
+# Build settings
+markdown: kramdown
+remote_theme: mmistakes/minimal-mistakes
+# Outputting
+permalink: /:categories/:title/
+paginate: 25 # amount of posts to show
+paginate_path: /page:num/
+timezone: IR
+
+lang: fa
+dir: rtl
+direction: rtl
+
+# Your website URL (e.g. http://barryclark.github.io or http://www.barryclark.co)
+# Used for Sitemap.xml and your RSS feed
+url: https://blog.mhkarami97.ir
+
+# If you're hosting your site at a Project repository on GitHub pages
+# (http://yourusername.github.io/repository-name)
+# and NOT your User repository (http://yourusername.github.io)
+# then add in the baseurl here, like this: "/repository-name"
+baseurl: "/"
+
+# Enter your Disqus shortname (not your username) to enable commenting on posts
+# You can find your shortname on the Settings page of your Disqus account
+#comments:
+#   provider: "giscus"
+   
+repository: "MHKarami97/blog"
+
+comments:
+  provider: ""
+  giscus:
+    repo_id              : "MDEwOlJlcG9zaXRvcnkzMjE5OTM3NDM="
+    category_name        : "General"
+    category_id          : "DIC_kwDOEzE8D84B-PIL"
+    discussion_term      : "pathname"
+    reactions_enabled    : "1"
+    theme                : "light"
+    crossorigin          : "anonymous" 
+
+#utterances:
+#  repo: "MHKarami97/blog"
+#  issue-term: "pathname"
+#  label: "Comments"
+#  theme: "github-light"
+  
+#giscus:
+#  repo: "MHKarami97/blog"
+#  repo-id: "MDEwOlJlcG9zaXRvcnkzMjE5OTM3NDM="
+#  category: "General"
+#  category-id: "DIC_kwDOEzE8D84B-PIL"
+#  mapping: "pathname"
+#  reaction-enabled: "1"
+#  theme: "light"
+#  crossorigin: "anonymous"  
+  
+#   disqus:
+#     shortname: "mhkarami97"
+# disqus: "mhkarami97"  
+
+# Enter your Google Analytics web tracking code (e.g. UA-2110908-2) to activate tracking
+google_analytics: "G-DZM25ZLKRP"
+analytics:
+  provider: "google-gtag"
+  google:
+    tracking_id: "G-DZM25ZLKRP"
+    anonymize_ip: false # default
+    
+google_site_verification: "BVwx9je8Sv6HbUTtZ4yJrPvJLZzE0wEsPS2VJHQzOKo"    
+  
+include:
+  - _pages
+
+# Exclude from processing.
+# The following items will not be processed, by default. Create a custom list
+# to override the default setting.
+# exclude:
+#   - Gemfile
+#   - Gemfile.lock
+#   - node_modules
+#   - vendor/bundle/
+#   - vendor/cache/
+#   - vendor/gems/
+#   - vendor/ruby/
+
+# Plugins (previously gems:)
+plugins:
+  - jekyll-paginate
+  - jekyll-sitemap
+  - jekyll-gist
+  - jekyll-feed
+  - jemoji
+  - jekyll-include-cache
+  - jekyll-seo-tag
+
+author:
+  name   : "محمد حسین کرمی"
+  avatar : "/assets/images/my.jpg"
+  bio    : "روزمرگی های یک برنامه نویس"
+  links:
+    - label: "وبسایت"
+      icon: "fas fa-fw fa-link"
+      url: "https://itarfand.com"
+    - label: "دیگر سایت‌ها"
+      icon: "fas fa-fw fa-link"
+      url: "https://mhkarami97.ir/#blog"  
+    - label: "انجمن گفتگو"
+      icon: "fas fa-fw fa-link"
+      url: "https://forum.itarfand.com"    
+    - label: "Twitter"
+      icon: "fab fa-fw fa-twitter-square"
+      url: "https://twitter.com/mhkarami97"
+    - label: "GitHub"
+      icon: "fab fa-fw fa-github"
+      url: "https://github.com/mhkarami97"
+    - label: "Instagram"
+      icon: "fab fa-fw fa-instagram"
+      url: "https://instagram.com/mhkarami97"
+    - label: "Linkedin"
+      icon: "fab fa-fw fa-linkedin"
+      url: "https://linkedin.com/in/mhkarami97"
+
+footer:
+  links:
+    - label: "Twitter"
+      icon: "fab fa-fw fa-twitter-square"
+      url: "https://twitter.com/mhkarami97"
+    - label: "GitHub"
+      icon: "fab fa-fw fa-github"
+      url: "https://github.com/mhkarami97"
+    - label: "Instagram"
+      icon: "fab fa-fw fa-instagram"
+      url: "https://instagram.com/mhkarami97"
+    - label: "Linkedin"
+      icon: "fab fa-fw fa-linkedin"
+      url: "https://linkedin.com/in/mhkarami97"
+
+defaults:
+  # _posts
+  - scope:
+      path: ""
+      type: posts
+    values:
+      layout: single
+      author_profile: true
+      read_time: true
+      comments: true
+      share: true
+      related: true
+      lang: fa
+      direction: rtl
+  # _pages
+  - scope:
+      path: "_pages"
+      type: pages
+    values:
+      layout: single
+      author_profile: true
+      lang: fa
+      direction: rtl
+
+category_archive:
+  type: liquid
+  path: /categories/
+tag_archive:
+  type: liquid
+  path: /tags/
